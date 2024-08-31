@@ -1,0 +1,202 @@
+::after,
+::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do texto como Arial */
+    background-color: #f0f8ff;    /* Define a cor de fundo da página */
+    color: #333;                  /* Define a cor do texto */
+    margin: 0;                      /* Remove as margens padrão */
+    padding: 0;                     /* Remove o preenchimento padrão */           
+}
+
+header {
+    background-color: #101B21;    /* Define a cor de fundo do cabeçalho */
+    color: white;                 /* Define a cor do texto do cabeçalho */
+    padding: 20px;                  /* Adiciona espaço dentro do cabeçalho */
+    text-align: center;             /* Centraliza o texto no cabeçalho */
+    position: relative;
+}
+
+
+nav ul {
+    list-style: none;               /* Remove os pontos da lista */
+    padding: 0;                     /* Remove o preenchimento padrão */
+    margin: 0;                      /* Remove a margem padrão */
+    display: flex;                  /* Organiza os itens da lista em linha e centraliza */
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;                 /* Adiciona espaço entre os itens da lista */
+}
+
+nav ul li a {
+    color: white;                 /* Define a cor dos links */
+    text-decoration: none;          /* Remove o sublinhado dos links */
+    font-size: 18px;                /* Define o tamanho da fonte dos links */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;     /* Adiciona sublinhado quando o mouse passa por cima */
+}
+
+section {
+    padding: 20px;                  /* Adiciona espaço dentro da seção */
+    margin: 20px;                   /* Adiciona espaço fora da seção */
+    background-color: #d8f3ff;    /* Define a cor de fundo da seção */
+    border-radius: 8px;             /* Adiciona cantos arredondados à seção */
+}
+
+.profile-photo, .project-photo, .contact-photo {
+    width: 150px;                   /* Define a largura das fotos */
+    height: 150px;                  /* Define a altura das fotos */
+    border-radius: 50%;             /* Adiciona bordas arredondadas às fotos */
+    margin: 30px 0;                 /* Adiciona espaço acima e abaixo das fotos */
+    float: left;
+    margin-right: 60px;             /* Espaçamento entre a imagem e o texto */
+    overflow: hidden;               /* Para garantir que o texto não flutua ao redor da imagem */
+}
+
+footer {
+    background-color: #101B21;    /* Define a cor de fundo do rodapé */
+    color: white;                 /* Define a cor do texto do rodapé */
+    text-align: center;             /* Centraliza o texto no rodapé */
+    padding: 1px 0;                 /* Adiciona espaço dentro do rodapé */
+    position: fixed;                /* Posiciona o rodapé em relação à sua posição normal no fluxo do documento */
+    clear: both;                    /* Garante que o rodapé fique abaixo do conteúdo */
+    width: 100%;                    /* Define a largura do rodapé para 100% da largura do elemento pai */
+    bottom: 0;                      /* Posiciona o rodapé na parte inferior do elemento pai */
+}
+
+nav ul li a:hover {                 /* Quando passar o mouse */
+    color: #0DA9E8;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+/* Toda configuração da Caixa box - Caixa messasem */
+body,
+textarea {
+    font-family: sans-serif; /* Define a fonte padrão como sans-serif para o corpo e textarea */
+}
+
+.container{
+    display: flex; /* Utiliza flexbox para o layout */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    width: 100%; /* Define a largura como 100% */
+    height: 60vh; /* Define a altura como 60% da altura da viewport */
+}
+
+.formulario{
+    display: flex; /* Utiliza flexbox para o layout */
+    flex-direction: column; /* Alinha os itens em coluna */
+    background-color: #fff; /* Define a cor de fundo como branco */
+    border-radius: 8px; /* Define bordas arredondadas com raio de 8px */
+    width: 70%; /* Define a largura como 100% */
+}
+
+.formulario .title{
+    padding: 24px 32px; /* Define o espaçamento interno (padding) */
+    font-size: 24px; /* Define o tamanho da fonte */
+    border-bottom: thin solid #ccc; /* Adiciona uma borda inferior fina e cinza */
+}
+
+.formulario form{
+    display: flex; /* Utiliza flexbox para o layout */
+    align-items: start; /* Alinha os itens no início verticalmente */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    padding: 20px; /* Define o espaçamento interno (padding) */
+}
+
+.formulario input,
+.formulario textarea{
+    width: calc(50% - 8px); /* Define a largura como 50% menos 8px */
+    height: 48px; /* Define a altura como 48px */
+    border-radius: 8px; /* Define bordas arredondadas com raio de 8px */
+    background-color: #999; /* Define a cor de fundo como cinza */
+    border: 2px solid #999; /* Define a borda com 2px de espessura e cor cinza */
+    color: var #ffffff; /* Define a cor do texto */
+    padding-left: 16px; /* Define o espaçamento interno à esquerda */
+    margin-bottom: 16px; /* Define a margem inferior */
+    font-size: 16px; /* Define o tamanho da fonte */
+    box-sizing: border-box; /* Inclui a borda e o padding no tamanho total do elemento */
+}
+
+.formulario:focus{
+    border-color: var #0516b3; /* Define a cor da borda ao focar no elemento */
+}
+
+.formulario input:first-child{ /* Estilo para o primeiro input */
+    margin-right: 16px; /* Define a margem direita */
+}
+
+.formulario input[name=subject]{  /* Estilo para o input com nome "subject" assunto*/
+    width: 100%; /* Define a largura como 100% */
+}
+
+.formulario textarea{
+    width: 100%; /* Define a largura como 100% */
+    height: 180px; /* Define a altura como 180px */
+    padding: 16px; /* Define o espaçamento interno (padding) */
+}
+
+.formulario button{
+    display: block; /* Define o botão como um bloco */
+    border: none; /* Remove a borda */
+    outline: none; /* Remove o contorno */
+    width: 180px; /* Define a largura como 180px */
+    height: 48px; /* Define a altura como 48px */
+    border-radius: 8px; /* Define bordas arredondadas com raio de 8px */
+    background-color: #040d5c; /* Define a cor de fundo */
+    color: #fff; /* Define a cor do texto */
+    font-size: 16px; /* Define o tamanho da fonte */
+    font-weight: bold; /* Define a fonte como negrito */
+    cursor: pointer; /* Define o cursor como ponteiro ao passar sobre o botão */
+}
+
+.formulario button:hover{
+    background-color: #28044b; /* Define a cor de fundo ao passar o mouse sobre o botão */
+}
+
+/* Estilo para o contêiner da galeria */
+.gallery {
+    display: flex; /* Usa flexbox para alinhar as imagens em linha */
+    justify-content: space-around; /* Espaça as imagens uniformemente */
+    width: 100%; /* Define a largura do contêiner */
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo para cada bloco de figura */
+figure {
+    margin: 0; /* Remove margens padrão */
+    text-align: center; /* Centraliza o texto da legenda */
+}
+
+/* Estilo para as imagens */
+img {
+   width: 200px; /* Define uma largura fixa para todas as imagens */
+    height: 200px; /* Define uma altura fixa para todas as imagens */
+    object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorção */
+    display: block; /* Remove o espaço em branco abaixo da imagem */
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+
+/* Estilo para as legendas */
+figcaption {
+    margin-top: 8px; /* Espaçamento acima da legenda */
+    font-size: 14px; /* Tamanho da fonte da legenda */
+    color: #555; /* Cor do texto da legenda */
+}
